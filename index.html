@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách Tô Màu - Color Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Sách Tô Màu</h1>
+            <p>Click vào các vùng trắng để tô màu!</p>
+        </header>
+        
+        <div class="image-selector">
+            <h3>📚 Chọn hình ảnh:</h3>
+            <div class="image-list" id="imageList">
+                <!-- Danh sách ảnh sẽ được thêm bằng JavaScript -->
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="color-picker-container">
+                <label for="colorPicker">Chọn màu:</label>
+                <input type="color" id="colorPicker" value="#ff6b9d">
+                <span id="selectedColor">#ff6b9d</span>
+            </div>
+            
+            <div class="preset-colors">
+                <button class="preset-color" data-color="#ff6b9d" style="background-color: #ff6b9d;"></button>
+                <button class="preset-color" data-color="#4ecdc4" style="background-color: #4ecdc4;"></button>
+                <button class="preset-color" data-color="#ffe66d" style="background-color: #ffe66d;"></button>
+                <button class="preset-color" data-color="#95e1d3" style="background-color: #95e1d3;"></button>
+                <button class="preset-color" data-color="#f38181" style="background-color: #f38181;"></button>
+                <button class="preset-color" data-color="#aa96da" style="background-color: #aa96da;"></button>
+                <button class="preset-color" data-color="#fcbad3" style="background-color: #fcbad3;"></button>
+                <button class="preset-color" data-color="#a8e6cf" style="background-color: #a8e6cf;"></button>
+                <button class="preset-color" data-color="#ffd3b6" style="background-color: #ffd3b6;"></button>
+                <button class="preset-color" data-color="#ffaaa5" style="background-color: #ffaaa5;"></button>
+            </div>
+            
+            <button id="resetBtn" class="btn-reset">🔄 Làm mới</button>
+            <button id="downloadBtn" class="btn-download">💾 Tải xuống</button>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="instructions">
+            <h3>Hướng dẫn:</h3>
+            <ul>
+                <li>Chọn hình ảnh từ danh sách bên trên</li>
+                <li>Chọn màu từ bảng màu hoặc color picker</li>
+                <li>Click vào các vùng trắng trong hình để tô màu</li>
+                <li>Nhấn "Làm mới" để reset hình ảnh</li>
+                <li>Nhấn "Tải xuống" để lưu hình ảnh đã tô màu</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
