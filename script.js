@@ -10,7 +10,7 @@ const imageList = document.getElementById('imageList');
 
 // Danh sách ảnh
 const images = [
-    { src: 'image.png', name: 'Dân tộc La Chí' },
+    { src: '54.png', name: 'Dân tộc La Chí' },
     { src: '1.png', name: 'Dân tộc Giáy' },
     { src: '2.png', name: 'Dân tộc Gié-Triêng' },
     { src: '3.png', name: 'Dân tộc Hà Nhì' },
